@@ -1,0 +1,68 @@
+<!-- Define HTML5 doctype -->
+<!DOCTYPE html>
+<html lang="en">
+  <!-- Main Language is English -->
+  <head>
+    <!-- Character Set - To be able to use Arabic -->
+    <meta charset="utf-8" />
+    <!-- Short description for the app -->
+    <meta
+      name="description"
+      content="Explore and book 1500+ beauty salons in Egypt"
+    />
+    <!-- Preloader styles -->
+    <link rel="stylesheet" href="<%= BASE_URL %>preloader.css" />
+    <!-- PWA Manifest -->
+    <link rel="manifest" href="<%= BASE_URL %>manifest.json" />
+    <!-- Main Color in Schema -->
+    <meta name="theme-color" content="#1976d2" />
+    <!-- Simulate an HTTP response header -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Make it responsive - Define user's visible area  -->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui"
+    />
+    <!-- App Icon -->
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico" />
+    <!-- Telephone -->
+    <meta name="format-detection" content="telephone=no" />
+    <!-- Microsoft Application Tab Highlight -->
+    <meta name="msapplication-tap-highlight" content="no" />
+    <!-- App Name -->
+    <title><%= htmlWebpackPlugin.options.title %></title>
+  </head>
+
+  <body>
+    <!-- Static Preloader -->
+    <!-- <div class="app-preloader">
+      <div class="preloader-container">
+        <div class="preloader">
+          <div class="lds-ripple">
+            <div></div>
+            <div></div>
+          </div>
+        </div>
+        <div class="preloader-text">
+          <span>Loading..</span>
+        </div>
+      </div>
+    </div> -->
+    <div class="app-preloader">
+      <div class="preloader"></div>
+    </div>
+    <!-- In case Javascript is not enabled in the browser -->
+    <noscript>
+      <div>
+        Browser is too old.
+      </div>
+      <div>
+        We're sorry but
+        <strong><%= htmlWebpackPlugin.options.title %></strong> doesn't work
+        properly without JavaScript enabled. Please enable it to continue.
+      </div>
+    </noscript>
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+  </body>
+</html>
