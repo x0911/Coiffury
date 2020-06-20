@@ -8,7 +8,7 @@ var _default = {
   /*
     General
   */
-  title: "Haircode",
+  title: "Coiffury",
   account: {
     login: "تسجيل الدخول",
     register: "التسجيل",

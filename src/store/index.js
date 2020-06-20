@@ -1,7 +1,7 @@
 import Vue from "vue";
 import Vuex from "vuex";
 
-let app_title = "Haircode";
+let app_title = "Coiffury";
 
 Vue.use(Vuex);
 

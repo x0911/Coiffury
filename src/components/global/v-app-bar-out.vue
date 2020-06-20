@@ -8,7 +8,7 @@
     class="contained"
   >
     <v-toolbar-title>
-      Haircode
+      Coiffury
     </v-toolbar-title>
     <v-spacer></v-spacer>
     <v-toolbar-items>

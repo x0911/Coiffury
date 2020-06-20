@@ -5,8 +5,8 @@ module.exports = {
   pluginOptions: {
     electronBuilder: {
       builderOptions: {
-        productName: "Haircode",
-        appId: "com.dash.haircode",
+        productName: "Coiffury",
+        appId: "com.dash.coiffury",
         win: {
           icon: "public/icon.ico"
         }
@@ -23,7 +23,7 @@ module.exports = {
   },
   chainWebpack: config => {
     config.plugin("html").tap(args => {
-      args[0].title = "Haircode";
+      args[0].title = "Coiffury";
       return args;
     });
   }

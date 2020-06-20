@@ -14,8 +14,8 @@ Vue.mixin({
     getAppDefaults(refresh = false) {
       // Fetch Current Theme and Language
       let langs = ["ar", "en"],
-        lang = this.$ls.get("haircode_lang", "en"),
-        dark_theme = this.$ls.get("haircode_dark_theme", "false");
+        lang = this.$ls.get("coiffury_lang", "en"),
+        dark_theme = this.$ls.get("coiffury_dark_theme", "false");
       this.$vuetify.theme.dark = dark_theme == "false" ? false : true;
       if (langs.includes(lang)) this.changeLang(lang);
       // Fetch Theme Options and colors
@@ -23,7 +23,7 @@ Vue.mixin({
         darks = this.$vuetify.theme.themes.dark;
       for (let l in lights) {
         if (lights.hasOwnProperty(l)) {
-          let v = this.$ls.get("haircode_theme_light" + "_" + l, null);
+          let v = this.$ls.get("coiffury_theme_light" + "_" + l, null);
           if (v) {
             this.$vuetify.theme.themes.light[l] = v;
           }
@@ -31,7 +31,7 @@ Vue.mixin({
       }
       for (let d in darks) {
         if (darks.hasOwnProperty(d)) {
-          let v = this.$ls.get("haircode_theme_dark" + "_" + d, null);
+          let v = this.$ls.get("coiffury_theme_dark" + "_" + d, null);
           if (v) {
             this.$vuetify.theme.themes.dark[d] = v;
           }
@@ -46,7 +46,7 @@ Vue.mixin({
       let langs = ["ar", "en"];
       lang = langs.includes(lang) ? lang : "en";
       this.$vuetify.lang.current = lang;
-      this.$ls.set("haircode_lang", lang);
+      this.$ls.set("coiffury_lang", lang);
       this.$vuetify.rtl = lang == "ar" ? true : false;
       return;
     },
@@ -265,7 +265,7 @@ Vue.mixin({
       return data;
     },
     changeTheme(c) {
-      this.$ls.set("haircode_dark_theme", c);
+      this.$ls.set("coiffury_dark_theme", c);
       this.$vuetify.theme.dark = c;
     },
     changeWidth() {
