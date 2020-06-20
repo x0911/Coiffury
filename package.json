@@ -1,11 +1,9 @@
 {
   "name": "coiffury",
-  "description": "Your beauty center.",
+  "description": "Explore and book 1500+ beauty salons in Egypt.",
   "version": "0.1.0",
   "author": {
-    "name": "Hamdi Mohamed",
-    "email": "maracap.x911@gmail.com",
-    "facebook_account": "https://www.facebook.com/dx.911"
+    "name": "Coiffury"
   },
   "private": true,
   "scripts": {

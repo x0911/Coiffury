@@ -1,5 +1,5 @@
 module.exports = {
-  productionSourceMap: false, // From Shuqbara
+  productionSourceMap: false,
   runtimeCompiler: true,
   transpileDependencies: ["vuetify", "@firebase"],
   pluginOptions: {

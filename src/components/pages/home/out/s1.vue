@@ -70,7 +70,7 @@
                         v-model="$store.state.login.phone.value"
                         persistent-hint
                         v-mask="$store.state.login.phone.mask"
-                        @keypress.enter="false ? setCaptcha() : () => {}"
+                        @keypress.enter="setCaptcha()"
                         hint=" "
                       >
                         <template v-slot:append>
@@ -81,7 +81,7 @@
                             rounded
                             :disabled="$store.state.login.loading"
                             :loading="$store.state.login.loading"
-                            @click="false ? setCaptcha() : () => {}"
+                            @click="setCaptcha()"
                             class="text-capitalize"
                           >
                             Next

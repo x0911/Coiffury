@@ -6,7 +6,7 @@
         @detected-condition="handleConnectivityChange"
       ></check-connection>
       <div v-if="currentUser()">
-        <ads-drawer></ads-drawer>
+        <!-- <ads-drawer></ads-drawer> -->
         <notification-drawer></notification-drawer>
         <navigation-drawer></navigation-drawer>
         <app-bar-in></app-bar-in>

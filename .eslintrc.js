@@ -12,7 +12,7 @@ module.exports = {
     "no-debugger": process.env.NODE_ENV === "production" ? "error" : "off",
     "vue/no-unused-components": "off",
     "no-unused-vars": "off",
-    "no-prototype-builtins": "off" // Search for this
+    "no-prototype-builtins": "off" // Search for this.
   },
   overrides: [
     {

@@ -1,6 +1,6 @@
 import Vue from "vue";
 const mix = require("@/mixin/fun.js");
-const fb = {}; // require("@/firebase.config.js")
+const fb = require("@/firebase.config.js");
 
 // Mixins
 Vue.mixin({

@@ -1,1 +1,6 @@
-{"appId":"com.dash.coiffury","appName":"Coiffury","bundledWebRuntime":false,"webDir":"D:\\XAMPP\\htdocs\\coiffury\\dist\\bundled"}
+{
+  "appId": "com.dash.coiffury",
+  "appName": "Coiffury",
+  "bundledWebRuntime": false,
+  "webDir": "D:\\XAMPP\\htdocs\\coiffury\\dist\\bundled"
+}

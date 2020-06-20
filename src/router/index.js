@@ -67,15 +67,6 @@ const routes = [
       title: "Dashboard",
       requiresAuth: true
     }
-  },
-  {
-    path: "/tournaments/:id?",
-    name: "tournaments",
-    component: mix.fun.loadView("in/Tournaments"),
-    meta: {
-      title: "Tournaments",
-      requiresAuth: true
-    }
   }
 ];
 

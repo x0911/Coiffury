@@ -98,7 +98,7 @@
             </div>
             <div>
               While moving around, you will get notified about updates in your
-              followed centers.
+              followed beauty centers.
             </div>
           </v-card-text>
         </v-card>
