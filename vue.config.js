@@ -1,7 +1,7 @@
 module.exports = {
   productionSourceMap: false,
   runtimeCompiler: true,
-  transpileDependencies: ["vuetify", "@firebase"],
+  transpileDependencies: ["vuetify", "@firebase", "proxy-polyfill"],
   pluginOptions: {
     electronBuilder: {
       builderOptions: {

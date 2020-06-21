@@ -1,11 +1,10 @@
 <template>
-  <div>
-    Home Page - Logged In
-  </div>
+  <div>Home Page - Logged in</div>
 </template>
 
 <script>
 export default {
-  name: "home-logged-in"
+  name: "home-logged-in",
+  data: () => ({})
 };
 </script>

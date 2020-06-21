@@ -20,9 +20,6 @@
   },
   "main": "background.js",
   "dependencies": {
-    "@capacitor/android": "^2.0.0",
-    "@capacitor/cli": "^2.0.1",
-    "@capacitor/core": "^2.0.1",
     "@mdi/font": "^5.3.45",
     "age-calculator": "^1.0.0",
     "apexcharts": "^3.17.0",
@@ -31,6 +28,7 @@
     "firebase-admin": "^8.10.0",
     "firebase-functions": "^3.5.0",
     "nprogress": "^0.2.0",
+    "proxy-polyfill": "^0.3.1",
     "register-service-worker": "^1.6.2",
     "roboto-fontface": "*",
     "typeface-cairo": "0.0.61",
@@ -52,7 +50,6 @@
     "vuex": "^3.1.2"
   },
   "devDependencies": {
-    "@nklayman/vue-cli-plugin-capacitor": "~0.3.0",
     "@vue/cli-plugin-babel": "~4.2.0",
     "@vue/cli-plugin-eslint": "~4.2.0",
     "@vue/cli-plugin-pwa": "~4.2.0",

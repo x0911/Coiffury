@@ -8,6 +8,7 @@
   },
   "hosting": {
     "public": "dist",
+    "site": "coiffury",
     "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
     "rewrites": [
       {

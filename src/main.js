@@ -1,7 +1,9 @@
+import "whatwg-fetch";
+import "proxy-polyfill";
 import Vue from "vue";
 import App from "./App.vue";
-import { Plugins } from "@capacitor/core";
-const { SplashScreen } = Plugins;
+// import { Plugins } from "@capacitor/core";
+// const { SplashScreen } = Plugins;
 import "./registerServiceWorker";
 import WebRTC from "vue-webrtc"; // To enable audio, video and screen-shared chat
 Vue.use(WebRTC);
@@ -42,7 +44,7 @@ fb.auth.onAuthStateChanged(user => {
   if (!app) {
     app = new Vue({
       created() {
-        SplashScreen.hide();
+        // SplashScreen.hide();
         this.fetchUserPublicInfo();
         let preloader = document.querySelector(".app-preloader");
         if (preloader) {
