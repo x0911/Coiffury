@@ -2,9 +2,9 @@
   <div>
     <v-app>
       <!-- v-navigation-drawer -->
-      <check-connection
+      <!-- <check-connection
         @detected-condition="handleConnectivityChange"
-      ></check-connection>
+      ></check-connection> -->
       <div v-if="currentUser()">
         <!-- <ads-drawer></ads-drawer> -->
         <notification-drawer></notification-drawer>
@@ -40,7 +40,7 @@ export default {
   name: "App",
   components: {
     // LandingPage: () => import("@/views/out/landing-page.vue"),
-    CheckConnection: () => import("v-offline"),
+    // CheckConnection: () => import("v-offline"),
     AppBarIn: () => import("@/components/global/v-app-bar-in.vue"),
     AppBarOut: () => import("@/components/global/v-app-bar-out.vue"),
     NotificationDrawer: () =>
@@ -55,9 +55,9 @@ export default {
   },
   data: () => ({}),
   methods: {
-    handleConnectivityChange(status) {
-      this.$store.state.isOnline = status;
-    }
+    // handleConnectivityChange(status) {
+    //   this.$store.state.isOnline = status;
+    // }
   }
 };
 </script>

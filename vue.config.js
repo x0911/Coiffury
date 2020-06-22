@@ -26,5 +26,9 @@ module.exports = {
       args[0].title = "Coiffury";
       return args;
     });
+    config.plugin("preload").tap(options => {
+      options[0].include = "all";
+      return options;
+    });
   }
 };
