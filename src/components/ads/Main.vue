@@ -15,11 +15,8 @@
         <template v-for="(s, i) in sponsors">
           <v-list-item three-line :key="i">
             <v-list-item-avatar>
-              <v-img
-                :src="require(`@/assets/sponsors/${s.icon}`)"
-                contain
-                aspect-ratio="1"
-              ></v-img>
+              <!-- :src="require(`@/assets/sponsors/${s.icon}`)" -->
+              <v-img :src="''" contain aspect-ratio="1"></v-img>
             </v-list-item-avatar>
             <v-list-item-content>
               <v-list-item-title

@@ -21,8 +21,12 @@
     <!-- Make it responsive - Define user's visible area  -->
     <meta
       name="viewport"
-      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui"
+      content="width=device-width, initial-scale=1, minimal-ui"
     />
+    <!--
+      We removed [maximum-scale=1, user-scalable=no] from the above meta
+      for users with low vision who rely on screen magnification to properly see the contents of a web page 3>
+     -->
     <!-- App Icon -->
     <link rel="icon" href="<%= BASE_URL %>favicon.ico" />
     <!-- Telephone -->

@@ -47,7 +47,7 @@ export default {
       import("@/components/global/v-notification-drawer.vue"),
     NavigationDrawer: () =>
       import("@/components/global/v-navigation-drawer.vue"),
-    AdsDrawer: () => import("@/components/ads/Main.vue"),
+    // AdsDrawer: () => import("@/components/ads/Main.vue"),
     GlobalErrorDialog: () => import("@/components/items/error-dialog.vue")
   },
   mounted() {

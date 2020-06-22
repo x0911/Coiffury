@@ -1,11 +1,11 @@
 {
   "name": "coiffury",
-  "description": "Explore and book 1500+ beauty salons in Egypt.",
   "version": "0.1.0",
+  "private": true,
+  "description": "Explore and book 1500+ beauty salons in Egypt.",
   "author": {
     "name": "Coiffury"
   },
-  "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
@@ -20,6 +20,10 @@
   },
   "main": "background.js",
   "dependencies": {
+    "@capacitor/android": "^2.0.0",
+    "@capacitor/cli": "^2.0.0",
+    "@capacitor/core": "^2.0.0",
+    "@capacitor/ios": "^2.2.0",
     "@mdi/font": "^5.3.45",
     "age-calculator": "^1.0.0",
     "apexcharts": "^3.17.0",
@@ -50,6 +54,7 @@
     "vuex": "^3.1.2"
   },
   "devDependencies": {
+    "@nklayman/vue-cli-plugin-capacitor": "~0.4.0",
     "@vue/cli-plugin-babel": "~4.2.0",
     "@vue/cli-plugin-eslint": "~4.2.0",
     "@vue/cli-plugin-pwa": "~4.2.0",

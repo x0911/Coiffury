@@ -6,7 +6,8 @@
           height="100%"
           width="100%"
           aspect-ratio="1"
-          :src="require('@/assets/landing/bg/24.jpg')"
+          :src="require('@/assets/standard/landing/s1/1.jpg')"
+          :lazy-src="require('@/assets/mini/landing/s1/1.jpg')"
           class="inner-img"
         >
           <template v-slot:placeholder>
@@ -60,7 +61,6 @@
                     <v-tab-item class="transparent" :value="0">
                       <v-text-field
                         autocomplete="off"
-                        aria-autocomplete="off"
                         filled
                         label="Phone Number"
                         :disabled="$store.state.login.loading"
@@ -111,7 +111,6 @@
                     <v-tab-item class="transparent" :value="1">
                       <v-text-field
                         autocomplete="off"
-                        aria-autocomplete="off"
                         filled
                         label="Code"
                         rounded

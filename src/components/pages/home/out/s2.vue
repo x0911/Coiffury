@@ -32,7 +32,8 @@
                     :class="
                       `align-end service-img ${hover ? 'zoom-on-hover' : ''}`
                     "
-                    :src="require(`@/assets/landing/s1/${s.img}`)"
+                    :src="require(`@/assets/standard/landing/s2-3/${s.img}`)"
+                    :lazy-src="require(`@/assets/mini/landing/s2-3/${s.img}`)"
                     height="200"
                     aspect-ratio="1"
                     :gradient="
@@ -46,6 +47,7 @@
                         flex-center
                         align-center
                         align-content-center
+                        justify-center
                       >
                         <v-progress-circular
                           indeterminate
