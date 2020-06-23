@@ -8,13 +8,10 @@ vue add @nklayman/capacitor
 npx cap sync
 npx cap copy
 npx cap update
-
-chcp 1252 // For gem
-
+chcp 1252 => For gem
 For testting
 test fairy
 pcloudy
 browserstack
-
 -->
 Code above is commented!

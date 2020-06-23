@@ -84,8 +84,10 @@
                             @click="setCaptcha()"
                             class="text-capitalize"
                           >
-                            Next
-                            <span class="mx-1"></span>
+                            <span v-if="$vuetify.breakpoint.mdAndUp">
+                              Next
+                              <span class="mx-1"></span>
+                            </span>
                             <v-icon class="rotateOnLangNigative" small
                               >mdi-keyboard-backspace</v-icon
                             >
@@ -173,11 +175,11 @@
                 </v-card-text>
                 <v-card-text class="pt-0">
                   * By pressing "Next", you accept our
-                  <router-link class="white--text" to="/terms"
+                  <router-link class="white--text" to="/"
                     >Terms of use</router-link
                   >
                   and
-                  <router-link class="white--text" to="/privacy"
+                  <router-link class="white--text" to="/"
                     >Privacy policy</router-link
                   >.
                 </v-card-text>
